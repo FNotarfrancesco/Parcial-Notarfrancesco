@@ -1,0 +1,88 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+
+header {
+    background-color: rgb(32, 151, 255);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.titulo {
+    color: white;
+    text-shadow: 1px 1px 1px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.contentMain {
+    padding-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#dolares-container div {
+    flex: 0 0 calc(33.33% - 20px);
+    margin-top: 20px;
+    border: 4px solid rgb(32, 151, 255);
+    border-radius: 10px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#dolares-container h2 {
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-bottom: 3px solid black;
+}
+
+#dolares-container p {
+    margin: 10px; /* Ajusta el margen según tus preferencias */
+}
+
+@media (max-width: 768px) {
+    #dolares-container div {
+        flex: 0 0 calc(50% - 20px); /* Ancho del 100% para mostrar un div por fila */
+    }
+}
+
+@media (max-width: 428px) {
+    #dolares-container div {
+        flex: 0 0 calc(100% - 20px); /* Ancho del 100% para mostrar un div por fila */
+    }
+}
+
+.botones {
+    display: flex; /* Alinear los botones en columna */
+    align-items: center; /* Centrar los elementos verticalmente */
+    justify-content: center; /* Centrar los elementos horizontalmente */
+    padding: 20px; /* Ajusta el espacio interno según tus necesidades */
+}
+
+.botones button {
+    cursor: pointer;
+    background-color: rgb(32, 151, 255);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 20px; /* Ajusta el tamaño del texto según tus necesidades */
+}
+
+.botones button:hover {
+    color: rgb(32, 151, 255);
+    background-color: white;
+    border: 2px solid rgb(32, 151, 255);
+}
